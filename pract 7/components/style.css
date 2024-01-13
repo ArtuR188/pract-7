@@ -1,0 +1,80 @@
+.app {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    width: clamp(800px, 60%, 1000px);
+    margin: auto;
+    height: max(700px, 60vh);
+  }
+  
+  .goods-wrapper {
+    width: 100%;
+    max-height: 60vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .goods-wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .goods-wrapper::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+  }
+  
+  .goods-wrapper::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+  }
+  
+  .counter-wrapper {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .counter-wrapper .header {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .counter-wrapper .total {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .counter-wrapper .auto-detect {
+    font-size: 1em;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .selected-goods {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .goods.selected {
+    border: 2px solid #3498db;
+    box-shadow: 0px 0px 10px 0 #3498db;
+    transform: scale(1.05);
+    margin: 5px;
+  }
+  
